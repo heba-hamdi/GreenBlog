@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { initFlowbite } from "flowbite";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   useEffect(() => {
@@ -164,12 +164,12 @@ const SignUp = () => {
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Already have an account?
-                <a
-                  href="#"
+                <Link
+                  to="/signin"
                   className="font-medium text-green-500 hover:underline dark:text-primary-500"
                 >
                   Login here
-                </a>
+                </Link>
               </p>
             </form>
           </div>
